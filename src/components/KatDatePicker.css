@@ -1,0 +1,127 @@
+#datePicker_start,
+#datePicker_end {
+  color: #fff;
+  text-align: center;
+}
+
+.progressButton {
+  background-color: #000;
+  border: solid 4px #9b2226;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 15rem;
+}
+
+.progressButton:hover {
+  background-color: #9b2226;
+  border: solid 2px #fff;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.datePicker_Container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  background-color: #000;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.react-datepicker {
+  border: solid 2px #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.react-datepicker-popper {
+  background-color: #000;
+}
+
+.react-datepicker__year-read-view:hover{
+  background-color: #9b2226;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+.react-datepicker__aria-live {
+  display: none;
+}
+
+.react-datepicker__current-month {
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+.react-datepicker__day {
+  padding: 10px;
+}
+.react-datepicker__day:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.react-datepicker__day-names {
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  align-items: center;
+}
+
+.react-datepicker__week {
+  font-weight: 400;
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.react-datepicker__header__dropdown {
+  border: solid 2px #fff;
+  border-radius: 5px;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.react-datepicker__year-read-view--down-arrow {
+  color: #fff;
+}
+
+.react-datepicker__navigation {
+  border: solid 2px #fff;
+  border-radius: 2px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.react-datepicker__navigation:hover {
+  cursor: pointer;
+  background-color: #9b2226;
+}
+
+.react-datepicker__navigation--next {
+  margin-left: 13rem;
+}
+
+.react-datepicker__close-icon {
+  display: none;
+}
+
+
+

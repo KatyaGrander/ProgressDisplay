@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import KatDatePicker from "./components/KatDatePicker";
+import DateCalculator from "./components/DateCalculator";
 
 function App() {
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
+
+  const getRange = (start, end) => {
+    setStartDate(start);
+
+    setEndDate(end);
+
+    console.log(start, end);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <KatDatePicker getRange={getRange} />
+      {startDate && endDate && (
+        <DateCalculator startDate={startDate} endDate={endDate} />
+      )}
     </div>
   );
 }
 
 export default App;
+
+/**/
